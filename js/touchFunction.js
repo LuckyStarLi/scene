@@ -62,12 +62,10 @@ $(".page4 .on").click(function() {
 
 $(".music").click(function() {
 	var audio1 = document.getElementById("audio")
-	if(audio1.pause()) {
+	if(audio1.paused) {
 		audio1.play()
 		this.src = "img/微信场景页/musicBtn.png"
-	}
-	
-	if(!audio1.pause()){
+	}else{
 		audio1.pause()
 		this.src = "img/微信场景页/musicBtnOff.png"
 	}
